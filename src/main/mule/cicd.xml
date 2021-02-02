@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="cicdFlow" doc:id="efad661e-55be-4954-8f22-b2e7d3838023" >
 		<http:listener doc:name="Listener" doc:id="8b1bb09f-75af-44f3-b49a-8146ed942a2b" config-ref="HTTP_Listener_config" path="/pipeline"/>
 		<logger level="INFO" doc:name="Logger" doc:id="a5fa1bda-77c0-41b1-8d5f-0b4367df1552" message="cicd flow has been Started"/>
-		<set-payload value="payload" doc:name="Set Payload" doc:id="ff6895b2-1989-4760-8116-9958d2dd2d38" />
+		<set-payload value="payload changes" doc:name="Set Payload" doc:id="ff6895b2-1989-4760-8116-9958d2dd2d38" />
 		<logger level="INFO" doc:name="Logger" doc:id="8067fed1-358a-4a97-8949-45df79124e09" message="Ended"/>
 	</flow>
 </mule>
